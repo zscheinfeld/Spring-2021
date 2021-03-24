@@ -55,16 +55,59 @@ body{
     height: 150px;
     width: 150px;
     position: relative;
+    position: -webkit-relative;
     left: 30%;
+    top:0px;
+    z-index: 5;
+}
+.art2{
+    background:url(Images/13.gif);
+    height: 150px;
+    width: 150px;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 80%;
     top:-45%;
+    z-index: 0;
+}
+
+.art3{
+    background:url(Images/13.gif);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    position: -webkit-relative;
+    left: 60%;
+    top:200px;
     z-index: 5;
 }
 
+.art4{
+    background:url(Images/13.gif);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    position: -webkit-relative;
+    left: 30%;
+    top:300px;
+    z-index: 0;
+}
+
+.art5{
+    background:url(Images/13.gif);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    position: -webkit-relative;
+    left: 20%;
+    top:50px;
+    z-index: 0;
+}
 
 .backdrop{
     left:10%;
     height: 100%;
-    width: 80%;
+    width: 100%;
     position: sticky;
     position: -webkit-sticky;
     z-index:1;

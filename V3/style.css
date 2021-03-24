@@ -1,0 +1,146 @@
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    
+    
+}
+
+.headline{
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    margin: auto;
+    height: 100vh;
+    top: 0px;
+
+}
+
+.articlecontainer{
+    width: 70%;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 2;
+    margin: auto;
+   
+}
+
+@keyframes brightness {
+    0%{filter:brightness(0%)}
+    50%{filter:brightness(40%)}
+    100%{filter:brightness(0%)}
+    
+}
+
+.backdropimage{
+    width: 100%;
+    height: 100%;
+    background:url("Images/09.jpg");
+    z-index: 0;
+    position: fixed;
+    top: 0%;
+    /* filter: brightness(30%); */
+    animation-name:brightness;
+    animation-duration:20s;
+    animation-iteration-count: infinite;
+    
+}
+
+.art{
+    background:url(Images/13.gif);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 30%;
+    top:-45%;
+    z-index: 5;
+}
+
+
+.backdrop{
+    left:10%;
+    height: 100%;
+    width: 80%;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index:1;
+    background-color:  rgb(109, 226, 109);
+    margin-top: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin-top: 100vh;
+}
+
+h1{
+    font-size: 13rem;
+    line-height: 12Rem;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: -2%;
+    margin-bottom: 10%;
+    text-align: Left;
+    margin-left: 2%;
+}
+
+h2{
+    font-size: 20rem;
+    line-height: 8Rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: right;
+    margin-top: -2%;
+    margin-bottom: 10%;
+    margin-right: 2%;
+    color: white;
+    font-style: italic;
+}
+
+h3{
+    font-size: 9rem;
+    line-height: 8Rem;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    margin-top: -2%;
+    margin-bottom: 5%;
+    text-align: Right;
+}
+
+h5{
+    color:mediumturquoise;
+    font-size: 1.5rem;
+    margin-left: 2%;
+    line-height: .5rem;
+    text-align: letf;
+    font-family: 'Archivo', sans-serif;
+}
+
+h4{
+    margin-top: -8%;
+    margin-left: 2%;
+    color: rgb(109, 226, 109);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: Left;
+    font-family: 'Archivo', sans-serif;
+}
+
+.strong{
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    hanging-punctuation: first;
+    color: white;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, indigo, blue, green, yellow, orange, red);   
+  -webkit-background-clip: text;
+  color: transparent;
+  font-style: italic;
+}
+
+
+

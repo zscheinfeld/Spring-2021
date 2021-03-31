@@ -1,4 +1,4 @@
-var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
     ranNums = [],
     i = nums.length,
     j = 0;
@@ -9,6 +9,8 @@ while (i--) {
     nums.splice(j,1);
 }
 console.log(ranNums)
+
+
 
 
 
@@ -59,42 +61,64 @@ imgArray[19] = new Image();
 imgArray[19].src = 'Gifs/20.gif';
 imgArray[20] = new Image();
 imgArray[20].src = 'Gifs/21.gif';
+imgArray[21] = new Image();
+imgArray[21].src = 'Gifs/22.gif';
+imgArray[22] = new Image();
+imgArray[22].src = 'Gifs/23.gif';
+imgArray[23] = new Image();
+imgArray[23].src = 'Gifs/24.gif';
+imgArray[24] = new Image();
+imgArray[24].src = 'Gifs/25.gif';
+imgArray[25] = new Image();
+imgArray[25].src = 'Gifs/26.gif';
+imgArray[26] = new Image();
+imgArray[26].src = 'Gifs/27.gif';
+imgArray[27] = new Image();
+imgArray[27].src = 'Gifs/28.gif';
+imgArray[28] = new Image();
+imgArray[28].src = 'Gifs/29.gif';
+imgArray[29] = new Image();
+imgArray[29].src = 'Gifs/30.gif';
+imgArray[30] = new Image();
+imgArray[30].src = 'Gifs/31.gif';
+imgArray[31] = new Image();
+imgArray[31].src = 'Gifs/32.gif';
 
 
 $('.art_01').prepend(imgArray[ranNums[0]]);
 $(".art_01").css({top: (150*Math.random() + "%")});
-$(".art_01").css({left: (90*Math.random() + "%")});
+$(".art_01").css({left: (80*Math.random() + "%")});
 
 $('.art_02').prepend(imgArray[ranNums[1]]);
 $(".art_02").css({top: (150*Math.random() + "%")});
-$(".art_02").css({left: (90*Math.random() + "%")});
+$(".art_02").css({left: (80*Math.random() + "%")});
 
 
 $('.art_03').prepend(imgArray[ranNums[2]]);
 $(".art_03").css({top: (150*Math.random() + "%")});
-$(".art_03").css({left: (90*Math.random() + "%")});
+$(".art_03").css({left: (80*Math.random() + "%")});
 
 
 $('.art_04').prepend(imgArray[ranNums[3]]);
 $(".art_04").css({top: (150*Math.random() + "%")});
-$(".art_04").css({left: (90*Math.random() + "%")});
+$(".art_04").css({left: (80*Math.random() + "%")});
 
 
 $('.art_05').prepend(imgArray[ranNums[4]]);
 $(".art_05").css({top: (150*Math.random() + "%")});
-$(".art_05").css({left: (90*Math.random() + "%")});
+$(".art_05").css({left: (80*Math.random() + "%")});
 
 $('.art_06').prepend(imgArray[ranNums[5]]);
 $(".art_06").css({top: (150*Math.random() + "%")});
-$(".art_06").css({left: (90*Math.random() + "%")});
+$(".art_06").css({left: (80*Math.random() + "%")});
 
 $('.art_07').prepend(imgArray[ranNums[6]]);
 $(".art_07").css({top: (150*Math.random() + "%")});
-$(".art_07").css({left: (90*Math.random() + "%")});
+$(".art_07").css({left: (80*Math.random() + "%")});
 
 $('.art_08').prepend(imgArray[ranNums[7]]);
 $(".art_08").css({top: (150*Math.random() + "%")});
-$(".art_08").css({left: (90*Math.random() + "%")});
+$(".art_08").css({left: (80*Math.random() + "%")});
 
 $('.textgif1').prepend(imgArray[ranNums[8]]);
 $('.textgif2').prepend(imgArray[ranNums[9]]);
@@ -105,6 +129,7 @@ var introlength = window.innerHeight * 1.5
 console.log(window.innerHeight + "window.innterHeight")
 console.log(introlength + "intro length")
 console.log(this.scrollY)
+var block1height = $("#block1").outerHeight()
 
 window.addEventListener("scroll", function(event){
     var scroll =this.scrollY;
@@ -123,5 +148,12 @@ window.addEventListener("scroll", function(event){
         $("#intro").addClass("headline")
 
     }
+
+    if (scroll> introlength + block1height){
+        console.log("backgroundchange")
+        console.log(block1height)
+    }
+
+
 
 })

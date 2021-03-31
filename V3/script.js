@@ -96,5 +96,32 @@ $('.art_08').prepend(imgArray[ranNums[7]]);
 $(".art_08").css({top: (150*Math.random() + "%")});
 $(".art_08").css({left: (90*Math.random() + "%")});
 
+$('.textgif1').prepend(imgArray[ranNums[8]]);
+$('.textgif2').prepend(imgArray[ranNums[9]]);
+$('.textgif3').prepend(imgArray[ranNums[10]]);
 
 
+var introlength = window.innerHeight * 1.5
+console.log(window.innerHeight + "window.innterHeight")
+console.log(introlength + "intro length")
+console.log(this.scrollY)
+
+window.addEventListener("scroll", function(event){
+    var scroll =this.scrollY;
+    console.log(scroll);
+
+    if (scroll > introlength){
+        console.log("fade")
+        $("#intro").removeClass("headline")
+        $("#intro").addClass("headlinescroll")
+
+    }
+    
+    if (introlength > scroll){
+        console.log("fade")
+        $("#intro").removeClass("headlinescroll")
+        $("#intro").addClass("headline")
+
+    }
+
+})

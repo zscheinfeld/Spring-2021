@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta charset="utf-8"> 
+       	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form Tool
+
+        </title>
+        <link rel="stylesheet" href="style.css">
+   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  
+</head>
+
+<body>
+    <div class = "titlecontainer">
+        Spirograph Animator
+    </div>
+    <div class ="byline">a web animation tool by Zach Scheinfeld</div>
+    <div class = "interfacecontainer">
+        <div class ="videocontainer">
+            <div class = "video2">
+                <img src= "Images/03.gif">
+            </div>
+            <div class = "video1">
+                <img src= "Images/02.gif">
+            </div>
+            <div class = "video3">
+                <img src= "Images/01.gif">
+            </div>
+            <div class = "video4">
+                <img src= "Images/03.gif">
+            </div>
+            <div class = "video5">
+                <img src= "Images/02.gif">
+            </div>
+            <div class = "video6">
+                <img src= "Images/01.gif">
+            </div>
+            <div class = "video7">
+                <img src= "Images/01.gif">
+            </div>
+            <div class = "video8">
+                <img src= "Images/01.gif">
+            </div>
+            <!-- <div class = "video9">
+                <img src= "Images/01.gif">
+            </div>
+            <div class = "video10">
+                <img src= "Images/01.gif">
+            </div> -->
+
+        </div>
+        <div class="controlpanel">
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation2">
+                    <p class="caption">Rotation: <span id="output_rotation2"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale2">
+                    <p class="caption">Scale: <span id="output_scale2"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x2">
+                    <p class="caption">X Position: <span id="output_x2"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y2">
+                    <p class="caption">Y Position: <span id="output_y2"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid2invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid2on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation3">
+                    <p class="caption">Rotation: <span id="output_rotation3"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale3">
+                    <p class="caption">Scale: <span id="output_scale3"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x3">
+                    <p class="caption">X Position: <span id="output_x3"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y3">
+                    <p class="caption">Y Position: <span id="output_y3"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid3invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid3on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation4">
+                    <p class="caption">Rotation: <span id="output_rotation4"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale4">
+                    <p class="caption">Scale: <span id="output_scale4"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x4">
+                    <p class="caption">X Position: <span id="output_x4"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y4">
+                    <p class="caption">Y Position: <span id="output_y4"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid4invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid4on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation5">
+                    <p class="caption">Rotation: <span id="output_rotation5"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale5">
+                    <p class="caption">Scale: <span id="output_scale5"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x5">
+                    <p class="caption">X Position: <span id="output_x5"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y5">
+                    <p class="caption">Y Position: <span id="output_y5"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid5invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid5on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation6">
+                    <p class="caption">Rotation: <span id="output_rotation6"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale6">
+                    <p class="caption">Scale: <span id="output_scale6"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x6">
+                    <p class="caption">X Position: <span id="output_x6"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y6">
+                    <p class="caption">Y Position: <span id="output_y6"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid6invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid6on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation7">
+                    <p class="caption">Rotation: <span id="output_rotation7"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale7">
+                    <p class="caption">Scale: <span id="output_scale7"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x7">
+                    <p class="caption">X Position: <span id="output_x7"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y7">
+                    <p class="caption">Y Position: <span id="output_y7"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid7invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid7on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation8">
+                    <p class="caption">Rotation: <span id="output_rotation8"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale8">
+                    <p class="caption">Scale: <span id="output_scale8"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x8">
+                    <p class="caption">X Position: <span id="output_x8"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y8">
+                    <p class="caption">Y Position: <span id="output_y8"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid8invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid8on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <!-- <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+                <div class = "slidebox">
+                    <div class="slidecontainer">
+                    <input type="range" min="0" max="360" value="0" class="slider" id="rotation1">
+                    <p class="caption">Rotation: <span id="output_rotation1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min=".2" max="3" step="0.1" value="0" class="slider" id="scale1">
+                    <p class="caption">Scale: <span id="output_scale1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step="1" value="0" class="slider" id="x1">
+                    <p class="caption">X Position: <span id="output_x1"></span></p>
+                  </div>
+                  <div class="slidecontainer">
+                    <input type="range" min="-1200" max="1200" step ="1" value="0" class="slider" id="y1">
+                    <p class="caption">Y Position: <span id="output_y1"></span></p>
+                  </div>
+
+                </div>
+            <div class ="buttoncontainer">
+                <div class ="icon">
+                </div>
+                <div class ="buttonscontainer">
+                    <div id = "vid1invert" class ="invert">
+                        <div class = "buttontext">Invert</div>
+                    </div>
+                    <div id = "vid1on" class ="onbutton">
+                        <div class = "buttontext">On/Off</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div>
+            <div class ="gifcontrols">
+            </div> -->
+
+        </div>
+    </div>
+    
+ 
+</body>
+<script src ="script.js"></script>
+
+</html>

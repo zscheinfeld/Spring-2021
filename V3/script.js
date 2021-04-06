@@ -11,10 +11,6 @@ while (i--) {
 console.log(ranNums)
 
 
-
-
-
-
 var toppx = (100*Math.random() + "%")
 
 
@@ -130,6 +126,13 @@ console.log(window.innerHeight + "window.innterHeight")
 console.log(introlength + "intro length")
 console.log(this.scrollY)
 var block1height = $("#block1").outerHeight()
+var block2height = $("#block2").outerHeight()
+var block3height = $("#block3").outerHeight()
+var block4height = $("#block4").outerHeight()
+
+var gif1height = $("#gif1").outerHeight()
+var gif2height = $("#gif2").outerHeight()
+var gif3height = $("#gif3").outerHeight()
 
 window.addEventListener("scroll", function(event){
     var scroll =this.scrollY;
@@ -149,10 +152,66 @@ window.addEventListener("scroll", function(event){
 
     }
 
-    if (scroll> introlength + block1height){
-        console.log("backgroundchange")
-        console.log(block1height)
-    }
+    // if (scroll> introlength + block1height){
+    //     // console.log("backgroundchange")
+    //     // console.log(block1height)
+    //     // $("#background").addClass("backdropimage1")
+    //     // $("#background").removeClass("backdropimage")
+    //     $(".backdropimage").css("background-image", "url(/images/09.jpg)")
+        
+    // }
+
+    // if (scroll < introlength + block1height){
+    //     // console.log("backgroundchange again")
+    //     // console.log(block1height)
+    //     // $("#background").addClass("backdropimage")
+    //     // $("#background").removeClass("backdropimage1")
+    //     $(".backdropimage").css("background-color", "black")
+    //     $(".backdropimage").css("background-image", "")
+    // }
+
+    // if (scroll> introlength + block1height + gif1height && scroll < introlength + block1height + block2height + gif1height){
+    //     // $("#background").addClass("backdropimageblack")
+    // }
+
+    // if (scroll< introlength + block1height + gif1height){
+    //     // $("#background").addClass("backdropimage")
+    //     // $("#background").removeClass("backdropimageblack")
+
+    // }
+
+    // if (scroll> introlength + block1height + block2height + gif1height-20){
+    //     console.log("Next change")
+    //     $(".backdropimage").animate({ opacity: 1 }, { duration: 3000 });
+    //     $(".backdropimage").css("background-image", "url(/images/15.png)")
+    //     // $("#background").addClass("backdropimage2")
+    //     // $("#background").removeClass("backdropimageblack")
+    // }
+
+    // if (scroll> introlength + block1height + block2height + gif1height-20){
+    //     console.log("Next change")
+    //     $(".backdropimage").animate({ opacity: 1 }, { duration: 3000 });
+    //     $(".backdropimage").css("background-image", "url(/images/15.png)")
+    //     // $("#background").addClass("backdropimage2")
+    //     // $("#background").removeClass("backdropimageblack")
+    // }
+
+    // if (scroll> introlength + block1height + block2height + gif1height + block3height + gif2height-20){
+    //     console.log("last change")
+    //     $(".backdropimage").animate({ opacity: 1 }, { duration: 3000 });
+    //     $(".backdropimage").css("background-image", "url(/images/17.jpeg)")
+
+    //     // $("#background").addClass("backdropimage2")
+    //     // $("#background").removeClass("backdropimageblack")
+    // }
+
+
+
+    // if (scroll < introlength + block1height + block2height + gif1height){
+    //     console.log("Next change")
+    //     // $("#background").removeClass("backdropimage2")
+    //     // $("#background").addClass("backdropimageblack")
+    // }
 
 
 

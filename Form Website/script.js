@@ -1,3 +1,16 @@
+// document ready
+
+$("document").ready(function() {
+  $( ".video2" ).hide()
+  $( ".video3" ).hide()
+  $( ".video4" ).hide()
+  $( ".video5" ).hide()
+  $( ".video6" ).hide()
+  $( ".video7" ).hide()
+  $( ".video8" ).hide()
+
+});
+
 // sliders 1 
 
 var sliderrotation = document.getElementById("rotation1");
@@ -124,7 +137,7 @@ slidery2.oninput = function() {
   $(".video2").css({'transform' : 'scale( '+ video2scale + ') translateX( '+ video2x + 'px) translateY( '+ video2y + 'px) rotate('+ video2rotation +'deg)'});
 }
 
-var vid2oncounter = 2;
+var vid2oncounter = 1;
 
 $("#vid2on").on('click', function(){
     if (vid2oncounter % 2 == 0){
@@ -201,7 +214,7 @@ slidery3.oninput = function() {
   $(".video3").css({'transform' : 'scale( '+ video3scale + ') translateX( '+ video3x + 'px) translateY( '+ video3y + 'px) rotate('+ video3rotation +'deg)'});
 }
 
-var vid3oncounter = 2;
+var vid3oncounter = 1;
 
 $("#vid3on").on('click', function(){
     if (vid3oncounter % 2 == 0){
@@ -277,7 +290,7 @@ slidery4.oninput = function() {
   $(".video4").css({'transform' : 'scale( '+ video4scale + ') translateX( '+ video4x + 'px) translateY( '+ video4y + 'px) rotate('+ video4rotation +'deg)'});
 }
 
-var vid4oncounter = 2;
+var vid4oncounter = 1;
 
 $("#vid4on").on('click', function(){
     if (vid4oncounter % 2 == 0){
@@ -354,7 +367,7 @@ slidery5.oninput = function() {
   $(".video5").css({'transform' : 'scale( '+ video5scale + ') translateX( '+ video5x + 'px) translateY( '+ video5y + 'px) rotate('+ video5rotation +'deg)'});
 }
 
-var vid5oncounter = 2;
+var vid5oncounter = 1;
 
 $("#vid5on").on('click', function(){
     if (vid5oncounter % 2 == 0){
@@ -431,7 +444,7 @@ slidery6.oninput = function() {
   $(".video6").css({'transform' : 'scale( '+ video6scale + ') translateX( '+ video6x + 'px) translateY( '+ video6y + 'px) rotate('+ video6rotation +'deg)'});
 }
 
-var vid6oncounter = 2;
+var vid6oncounter = 1;
 
 $("#vid6on").on('click', function(){
     if (vid6oncounter % 2 == 0){
@@ -508,7 +521,7 @@ slidery7.oninput = function() {
   $(".video7").css({'transform' : 'scale( '+ video7scale + ') translateX( '+ video7x + 'px) translateY( '+ video7y + 'px) rotate('+ video7rotation +'deg)'});
 }
 
-var vid7oncounter = 2;
+var vid7oncounter = 1;
 
 $("#vid7on").on('click', function(){
     if (vid7oncounter % 2 == 0){
@@ -585,7 +598,7 @@ slidery8.oninput = function() {
   $(".video8").css({'transform' : 'scale( '+ video8scale + ') translateX( '+ video8x + 'px) translateY( '+ video8y + 'px) rotate('+ video8rotation +'deg)'});
 }
 
-var vid8oncounter = 2;
+var vid8oncounter = 1;
 
 $("#vid8on").on('click', function(){
     if (vid8oncounter % 2 == 0){

@@ -8,6 +8,7 @@ $("document").ready(function() {
   $( ".video6" ).hide()
   $( ".video7" ).hide()
   $( ".video8" ).hide()
+  $("#vid1on").css({"background-color": "yellowgreen"});
 
 });
 
@@ -66,10 +67,12 @@ $("#vid1on").on('click', function(){
     if (vid1oncounter % 2 == 0){
         $( ".video1" ).hide()
         console.log("on")
+        $("#vid1on").css({"background-color": "transparent"});
         }
     else {
             $( ".video1" ).show()
             console.log("off")
+            $("#vid1on").css({"background-color": "yellowgreen"});
             }
     vid1oncounter = vid1oncounter + 1
 
@@ -81,11 +84,13 @@ $("#vid1invert").on('click', function(){
     if (vid1invertcounter % 2 == 0){
     $( ".video1" ).css({'filter' : 'invert(100)'})
     $( ".video1" ).css({'background-blend-mode' : 'screen'})
+    $("#vid1invert").css({"background-color": "rgb(185, 20, 172)"});
 
     }
     else {
         $( ".video1" ).css({'filter' : 'invert(0)'})
         $( ".video1" ).css({'background-blend-mode' : 'multiply'})
+        $("#vid1invert").css({"background-color": "transparent"});
         }
 
     vid1invertcounter = vid1invertcounter + 1
@@ -143,10 +148,13 @@ $("#vid2on").on('click', function(){
     if (vid2oncounter % 2 == 0){
         $( ".video2" ).hide()
         console.log("on")
+        $("#vid2on").css({"background-color": "transparent"});
+        
         }
     else {
             $( ".video2" ).show()
             console.log("off")
+            $("#vid2on").css({"background-color": "yellowgreen"});
             }
     vid2oncounter = vid2oncounter + 1
 
@@ -157,11 +165,13 @@ var vid2invertcounter = 2;
 $("#vid2invert").on('click', function(){
     if (vid2invertcounter % 2 == 0){
     $( ".video2" ).css({'filter' : 'invert(100)'})
+    $("#vid2invert").css({"background-color": "rgb(185, 20, 172)"});
 
 
     }
     else {
         $( ".video2" ).css({'filter' : 'invert(0)'})
+        $("#vid2invert").css({"background-color": "transparent"});
             
         }
 
@@ -220,10 +230,12 @@ $("#vid3on").on('click', function(){
     if (vid3oncounter % 2 == 0){
         $( ".video3" ).hide()
         console.log("on")
+        $("#vid3on").css({"background-color": "transparent"});
         }
     else {
             $( ".video3" ).show()
             console.log("off")
+            $("#vid3on").css({"background-color": "yellowgreen"});
             }
     vid3oncounter = vid3oncounter + 1
 
@@ -234,11 +246,13 @@ var vid3invertcounter = 2;
 $("#vid3invert").on('click', function(){
     if (vid3invertcounter % 2 == 0){
     $( ".video3" ).css({'filter' : 'invert(100)'})
+    $("#vid3invert").css({"background-color": "rgb(185, 20, 172)"});
     
 
     }
     else {
         $( ".video3" ).css({'filter' : 'invert(0)'})
+        $("#vid3invert").css({"background-color": "transparent"});
         }
 
     vid3invertcounter = vid3invertcounter + 1
@@ -296,10 +310,12 @@ $("#vid4on").on('click', function(){
     if (vid4oncounter % 2 == 0){
         $( ".video4" ).hide()
         console.log("on")
+        $("#vid4on").css({"background-color": "transparent"});
         }
     else {
             $( ".video4" ).show()
             console.log("off")
+            $("#vid4on").css({"background-color": "yellowgreen"});
             }
     vid4oncounter = vid4oncounter + 1
 
@@ -311,11 +327,13 @@ $("#vid4invert").on('click', function(){
     if (vid4invertcounter % 2 == 0){
     $( ".video4" ).css({'filter' : 'invert(100)'})
     $( ".video4" ).css({'background-blend-mode' : 'screen'})
+    $("#vid4invert").css({"background-color": "rgb(185, 20, 172)"});
 
     }
     else {
         $( ".video4" ).css({'filter' : 'invert(0)'})
         $( ".video4" ).css({'background-blend-mode' : 'multiply'})
+        $("#vid4invert").css({"background-color": "transparent"});
         }
 
     vid4invertcounter = vid4invertcounter + 1
@@ -373,10 +391,14 @@ $("#vid5on").on('click', function(){
     if (vid5oncounter % 2 == 0){
         $( ".video5" ).hide()
         console.log("on")
+        $("#vid5on").css({"background-color": "transparent"});
+        
         }
     else {
             $( ".video5" ).show()
             console.log("off")
+            $("#vid5on").css({"background-color": "yellowgreen"});
+            
             }
     vid5oncounter = vid5oncounter + 1
 
@@ -388,11 +410,13 @@ $("#vid5invert").on('click', function(){
     if (vid5invertcounter % 2 == 0){
     $( ".video5" ).css({'filter' : 'invert(100)'})
     $( ".video5" ).css({'background-blend-mode' : 'screen'})
+    $("#vid5invert").css({"background-color": "rgb(185, 20, 172)"});
 
     }
     else {
         $( ".video5" ).css({'filter' : 'invert(0)'})
         $( ".video5" ).css({'background-blend-mode' : 'multiply'})
+        $("#vid5invert").css({"background-color": "transparent"});
         }
 
     vid5invertcounter = vid5invertcounter + 1
@@ -450,10 +474,12 @@ $("#vid6on").on('click', function(){
     if (vid6oncounter % 2 == 0){
         $( ".video6" ).hide()
         console.log("on")
+        $("#vid6on").css({"background-color": "transparent"});
         }
     else {
             $( ".video6" ).show()
             console.log("off")
+            $("#vid6on").css({"background-color": "yellowgreen"});
             }
     vid6oncounter = vid6oncounter + 1
 
@@ -465,11 +491,13 @@ $("#vid6invert").on('click', function(){
     if (vid6invertcounter % 2 == 0){
     $( ".video6" ).css({'filter' : 'invert(100)'})
     $( ".video6" ).css({'background-blend-mode' : 'screen'})
+    $("#vid6invert").css({"background-color": "rgb(185, 20, 172)"});
 
     }
     else {
         $( ".video6" ).css({'filter' : 'invert(0)'})
         $( ".video6" ).css({'background-blend-mode' : 'multiply'})
+        $("#vid6invert").css({"background-color": "transparent"});
         }
 
     vid6invertcounter = vid6invertcounter + 1
@@ -527,10 +555,12 @@ $("#vid7on").on('click', function(){
     if (vid7oncounter % 2 == 0){
         $( ".video7" ).hide()
         console.log("on")
+        $("#vid7on").css({"background-color": "transparent"});
         }
     else {
             $( ".video7" ).show()
             console.log("off")
+            $("#vid7on").css({"background-color": "yellowgreen"});
             }
     vid7oncounter = vid7oncounter + 1
 
@@ -542,11 +572,13 @@ $("#vid7invert").on('click', function(){
     if (vid7invertcounter % 2 == 0){
     $( ".video7" ).css({'filter' : 'invert(100)'})
     $( ".video7" ).css({'background-blend-mode' : 'screen'})
+    $("#vid7invert").css({"background-color": "rgb(185, 20, 172)"});
 
     }
     else {
         $( ".video7" ).css({'filter' : 'invert(0)'})
         $( ".video7" ).css({'background-blend-mode' : 'multiply'})
+        $("#vid7invert").css({"background-color": "transparent"});
         }
 
     vid7invertcounter = vid7invertcounter + 1
@@ -604,10 +636,12 @@ $("#vid8on").on('click', function(){
     if (vid8oncounter % 2 == 0){
         $( ".video8" ).hide()
         console.log("on")
+        $("#vid8on").css({"background-color": "transparent"});
         }
     else {
             $( ".video8" ).show()
             console.log("off")
+            $("#vid8on").css({"background-color": "yellowgreen"});
             }
     vid8oncounter = vid8oncounter + 1
 
@@ -619,11 +653,13 @@ $("#vid8invert").on('click', function(){
     if (vid8invertcounter % 2 == 0){
     $( ".video8" ).css({'filter' : 'invert(100)'})
     $( ".video8" ).css({'background-blend-mode' : 'screen'})
+    $("#vid8invert").css({"background-color": "rgb(185, 20, 172)"});
 
     }
     else {
         $( ".video8" ).css({'filter' : 'invert(0)'})
         $( ".video8" ).css({'background-blend-mode' : 'multiply'})
+        $("#vid8invert").css({"background-color": "transparent"});
         }
 
     vid8invertcounter = vid8invertcounter + 1

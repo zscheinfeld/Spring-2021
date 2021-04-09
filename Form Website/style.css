@@ -526,4 +526,44 @@ body{
         display: block;
     }
     
+    .slider {
+        -webkit-appearance: none;
+        width: 92%;
+        outline: none;
+        border-radius: 15px; 
+        background-color: rgb(78, 78, 78)
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%; 
+        background: #ffffff;
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+      }
+
+      .slidecontainer{
+        margin-top: 7.5%;
+        margin-left: 6%;
+    }
+
+    .caption{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: .75rem;
+        line-height: 0rem;
+        margin-top: 4.5%;
+        margin-left: 3%;
+        color: white;
+    }
+
   }

@@ -376,8 +376,7 @@ body{
     }
 
     .titlecontainer{
-        margin-top: 8%;
-        margin-bottom: 1%;
+        margin-top: 8%
     }
 
     .byline{
@@ -515,7 +514,7 @@ body{
 
     .gifcontrols{
         width: 90%;
-        height: 20vh;
+        height: 24vh;
         margin: 2%;
         display: flex;
         border: white 2px;
@@ -531,7 +530,8 @@ body{
         width: 92%;
         outline: none;
         border-radius: 15px; 
-        background-color: rgb(78, 78, 78)
+        background-color: rgb(78, 78, 78);
+
     }
     
     .slider::-webkit-slider-thumb {
@@ -553,17 +553,31 @@ body{
       }
 
       .slidecontainer{
-        margin-top: 7.5%;
-        margin-left: 6%;
+          margin-top: 0%;
+    
     }
 
     .caption{
         font-family: 'IBM Plex Mono', monospace;
         font-size: .75rem;
         line-height: 0rem;
-        margin-top: 4.5%;
-        margin-left: 3%;
         color: white;
+        margin-top: 4%;
     }
+
+    .slidecontainermaster{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .slidecontaineritems{
+        height: 22%;
+        
+    }
+
+
 
   }
